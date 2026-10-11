@@ -1,0 +1,20 @@
+<vbox onload="document.getElementById('id-keepzotero-cb_start_with_windows').disabled = !Zotero.isWin;">
+	<groupbox>
+    <label><html:h2>开机自启动</html:h2></label>
+    <checkbox id="id-keepzotero-cb_start_with_windows" label="Windows 开机时自动启动 Zotero" preference="extensions.keepzotero.cb_start_with_windows"/>
+    <description>登录当前 Windows 账户后在后台静默启动 Zotero，不显示主窗口。双击托盘图标或点击任务栏的 Zotero 图标可打开。取消勾选即可关闭自启动，无需重启 Zotero。</description>
+	</groupbox>
+	<groupbox>
+    <label><html:h2>关闭与最小化</html:h2></label>
+    <description>点击 × 后可隐藏到 Windows 系统托盘。双击托盘图标可重新打开，右键可选择“退出 Zotero”。点击固定在任务栏的 Zotero 图标也可重新打开，并保留窗口原来的大小或最大化状态。</description>
+    <checkbox id="id-keepzotero-cb_minimize_on_button" label="点击主窗口的 × 时最小化" preference="extensions.keepzotero.cb_minimize_on_button"/>
+    <checkbox id="id-keepzotero-cb_minimize_to_tray" label="最小化时隐藏到系统托盘（Windows）" preference="extensions.keepzotero.cb_minimize_to_tray"/>
+    <checkbox id="id-keepzotero-cb_check_exit" label="退出 Zotero 前显示确认提示" preference="extensions.keepzotero.cb_check_exit"/>
+    <checkbox id="id-keepzotero-cb_enable_ctrl_w" label="在文库标签页按 Ctrl / Command + W 时最小化" preference="extensions.keepzotero.cb_enable_ctrl_w"/>
+    <groupbox> 
+      <label><html:h3>以下快捷键仅适用于 Windows / Linux</html:h3></label>
+      <checkbox id="id-keepzotero-cb_enable_alt_f4" label="按 Alt + F4 或通过系统关闭窗口时最小化" preference="extensions.keepzotero.cb_enable_alt_f4"/>
+      <checkbox id="id-keepzotero-cb_enable_ctrl_q" label="按 Ctrl + Q 时最小化" preference="extensions.keepzotero.cb_enable_ctrl_q"/>
+    </groupbox>
+	</groupbox>
+</vbox>

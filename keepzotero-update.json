@@ -1,0 +1,19 @@
+{
+  "addons": {
+    "keepzotero@yhmtsai": {
+      "updates": [
+        {
+          "version": "0.3.5",
+          "update_link": "https://github.com/zycyjun/KeepZotero-Windows/raw/refs/heads/main/keepzotero-zotero10-tray-0.3.5.xpi",
+          "update_hash": "sha256:c2ac68efe2caf6d30d73443e64dc262af2ea2da7a5eaf13d4fcf5427f88d8844",
+          "applications": {
+            "zotero": {
+              "strict_min_version": "10.0",
+              "strict_max_version": "10.0.*"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
